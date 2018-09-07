@@ -10,7 +10,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` });
-    const separtorIndex = ~slug.indexOf("--") ? slug.indexOf("--") : 0;
+    const separtorIndex = ~slug.indexOf("__") ? slug.indexOf("__") : 0;
     const shortSlugStart = separtorIndex ? separtorIndex + 2 : 0;
     createNodeField({
       node,
