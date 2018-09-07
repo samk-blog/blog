@@ -154,6 +154,7 @@ Layout.propTypes = {
 
 export default Layout;
 
+// Add menuTitle in frontmatter later, if required
 //eslint-disable-next-line no-undef
 export const postQuery = graphql`
   query LayoutQuery {
@@ -169,7 +170,6 @@ export const postQuery = graphql`
           }
           frontmatter {
             title
-            menuTitle
           }
         }
       }

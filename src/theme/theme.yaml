@@ -53,15 +53,16 @@ color:
       j: &color-gray-10 '#3e3e3c'
       k: '#2b2826'
     black: '#000000'
+  # https://www.materialpalette.com/deep-purple/blue
   brand:
-    primary: &color-brand-primary '#709425'
-    primaryActive: '#709425'
-    light: '#709425'
-    lightActive: '#709425'
-    dark: '#709425'
-    darkActive: '#709425'
+    primary: &color-brand-primary '#673AB7' # primary color
+    primaryActive: '#673AB7' # primary color
+    light: '#D1C4E9' # light primary color
+    lightActive: '#D1C4E9' # light primary color
+    dark: '#512DA8' # dark primary color
+    darkActive: '#512DA8' # dark primary color
   special:
-    attention: &color-special-attention orange
+    attention: &color-special-attention '#448AFF' # accent color
 # FONT
 font:
   # font options
