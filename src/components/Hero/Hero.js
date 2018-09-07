@@ -58,7 +58,7 @@ const Hero = props => {
         }
 
         button {
-          background: ${theme.background.color.brand};
+          background: ${theme.color.special.attention};
           border: 0;
           border-radius: 50%;
           font-size: ${theme.font.size.m};
