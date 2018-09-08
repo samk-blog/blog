@@ -3,7 +3,7 @@ backend:
   repo: samk-blog/blog
 
 media_folder: "content/posts/images"
-public_folder: "./images"
+public_folder: "/images"
 
 collections:
   - name: "blog"
