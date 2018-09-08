@@ -2,6 +2,8 @@ backend:
   name: github
   repo: samk-blog/blog
 
+publish_mode: editorial_workflow
+
 media_folder: "content/posts/images"
 public_folder: "/images"
 
@@ -13,7 +15,13 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}__{{slug}}"
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Category, name: category, widget: string, required: false }
+      - {
+          label: Category,
+          name: category,
+          widget: string,
+          required: false,
+          default: "./images/placeholder.png",
+        }
       - { label: Cover, name: cover, widget: string }
       - { label: Body, name: body, widget: markdown }
   - label: "Pages"
