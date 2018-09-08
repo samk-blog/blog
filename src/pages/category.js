@@ -99,7 +99,6 @@ export const guery = graphql`
           frontmatter {
             title
             category
-            author
             cover {
               children {
                 ... on ImageSharp {
