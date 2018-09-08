@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: "Samreen's Blog", // <title>
   shortSiteTitle: "Samreen's Blog", // <title> ending for posts and pages
   siteDescription: "I write about the things I like.",
-  siteUrl: "https://www.example.com", // TODO
+  siteUrl: "https://samreenk.com",
   pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",

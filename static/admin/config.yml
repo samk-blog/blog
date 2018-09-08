@@ -3,6 +3,7 @@ backend:
   repo: samk-blog/blog
 
 publish_mode: editorial_workflow
+display_url: https://samreenk.com
 
 media_folder: "content/posts/images"
 public_folder: "/images"
