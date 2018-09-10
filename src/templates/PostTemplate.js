@@ -14,7 +14,7 @@ const PostTemplate = props => {
       post,
       authornote: { html: authorNote },
       site: {
-        siteMetadata: { siteUrl, facebook }
+        siteMetadata: { facebook }
       }
     },
     pathContext: { next, prev }
@@ -32,7 +32,6 @@ const PostTemplate = props => {
               authornote={authorNote}
               facebook={facebook}
               theme={theme}
-              siteUrl={siteUrl}
             />
           </Article>
         )}
@@ -78,7 +77,6 @@ export const postQuery = graphql`
     }
     site {
       siteMetadata {
-        siteUrl
         facebook {
           appId
         }

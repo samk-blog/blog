@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactDisqusComments from "react-disqus-comments";
 import "prismjs/themes/prism-okaidia.css";
 
 import asyncComponent from "../AsyncComponent";
@@ -29,7 +28,6 @@ const Post = props => {
     },
     authornote,
     facebook,
-    siteUrl,
     next: nextPost,
     prev: prevPost,
     theme
@@ -46,13 +44,7 @@ const Post = props => {
         <Share post={post} theme={theme} />
         <Author note={authornote} theme={theme} />
         <NextPrev next={nextPost} prev={prevPost} theme={theme} />
-        {/* <Comments slug={slug} facebook={facebook} theme={theme} /> */}
-        <ReactDisqusComments
-          shortname="samreen-blog"
-          identifier={`${siteUrl}${slug}`}
-          title={title}
-          url={`${siteUrl}${slug}`}
-        />
+        <Comments slug={slug} facebook={facebook} theme={theme} />
       </footer>
     </React.Fragment>
   );
@@ -64,8 +56,7 @@ Post.propTypes = {
   facebook: PropTypes.object.isRequired,
   next: PropTypes.object,
   prev: PropTypes.object,
-  theme: PropTypes.object.isRequired,
-  siteUrl: PropTypes.string.isRequired
+  theme: PropTypes.object.isRequired
 };
 
 export default Post;
