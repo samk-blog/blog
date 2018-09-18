@@ -71,7 +71,7 @@ const Contact = props => {
                       whitespace: true
                     }
                   ]
-                })(<Input name="name"/>)}
+                })(<Input name="name" />)}
               </FormItem>
               <FormItem label="E-mail">
                 {getFieldDecorator("email", {
@@ -83,7 +83,7 @@ const Contact = props => {
                       type: "email"
                     }
                   ]
-                })(<Input name="email"/>)}
+                })(<Input name="email" />)}
               </FormItem>
               <FormItem label="Message">
                 {getFieldDecorator("message", {
@@ -91,11 +91,7 @@ const Contact = props => {
                     { required: true, message: "Please input your message!", whitespace: true }
                   ]
                 })(
-                  <TextArea
-                    name="message"
-                    placeholder="Autosize height with minimum and maximum number of lines"
-                    autosize={{ minRows: 4, maxRows: 10 }}
-                  />
+                  <TextArea name="message" placeholder="" autosize={{ minRows: 4, maxRows: 10 }} />
                 )}
               </FormItem>
               <FormItem>
